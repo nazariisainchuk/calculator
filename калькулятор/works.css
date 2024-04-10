@@ -1,0 +1,76 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://static.riel.ua/blogs/original/7LwVMDzzNdI56ehvfoFqvECTFan7ZH9q2hY8t39J.jpg');
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: #79b2ce;
+}
+
+.container {
+    margin-top: 50px; /* Відступ від верхнього краю, щоб не перекривалося меню */
+    padding: 20px;
+}
+
+h2 {
+text-align: center;
+    font-size: 45px;
+    margin-bottom: 50px;
+    color: #ffffff;
+    -webkit-text-stroke: 2px black;
+    color: rgb(255, 255, 255);
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* По два зображення в рядку */
+    gap: 20px;
+}
+
+.image-modal {
+    position: relative;
+    cursor: pointer;
+    border: 5px solid #342e2e; /* Додаємо білу рамку */
+    border-radius: 10px; /* Закруглені кути */
+    overflow: hidden; /* Зробимо рамку навколо зображення */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Тінь для футуристичного вигляду */
+}
+
+.image-modal img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px; /* Закруглені кути для зображення */
+    object-fit: cover; /* Заповнює рамку повністю */
+    transition: transform 0.3s;
+}
+
+
+.image-modal img:hover {
+    transform: scale(1.05);
+}

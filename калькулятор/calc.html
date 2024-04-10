@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор вартості ремонту</title>
+    <link rel="stylesheet" href="calcl.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="calc.html">Калькулятор</a></li>
+                <li><a href="about.html">Про нас</a></li>
+                <li><a href="contacts.html">Контакти</a></li>
+                <li><a href="works.html">Наші роботи</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div id="calculator" class="page">
+        <!-- Код вашого калькулятора тут -->
+    </div>
+    
+    <div id="about" class="page">
+        <h2>Про нас</h2>
+        <!-- Тут буде вміст про компанію -->
+    </div>
+    
+    <div id="contact" class="page">
+        <h2>Контакти</h2>
+        <!-- Тут будуть контактні дані -->
+    </div>
+    
+    <div id="portfolio" class="page">
+        <h2>Наші роботи</h2>
+        <!-- Тут будуть роботи компанії -->
+    </div>
+
+<div class="container">
+    <h1>Калькулятор розрахунку вартості ремонту</h1>
+    <div id="calculator">
+        <label for="area">Площа (кв. м):</label>
+        <input type="number" id="area" min="0" required>
+        <label for="quality">Рівень якості:</label>
+        <select id="quality">
+            <option value="simple">Косметичний</option>
+            <option value="normal">Капітальний</option>
+            <option value="premium">Дизайнерський</option>
+        </select>
+        <label for="doors">Кількість дверей :</label>
+        <input type="number" id="doors" min="0">
+        <label for="windows">Кількість вікон :</label>
+        <input type="number" id="windows" min="0">
+        <label for="exteriorPaint">Фарбування екстер'єру (кв. м):</label>
+        <input type="number" id="exteriorPaint" min="0">
+        <label for="interiorPaint">Фарбування інтер'єру (кв. м):</label>
+        <input type="number" id="interiorPaint" min="0">
+        <label for="flooring">Підлогове покриття (кв. м):</label>
+        <input type="number" id="flooring" min="0">
+        <button onclick="calculateCost()">Розрахувати вартість ремонту</button>
+        <div id="totalCost" class="result"></div>
+        <div id="additionalCosts" class="result"></div>
+        <div id="doorCost" class="result"></div>
+        <div id="windowCost" class="result"></div>
+        <div id="exteriorPaintCost" class="result"></div>
+        <div id="interiorPaintCost" class="result"></div>
+        <div id="flooringCost" class="result"></div>
+    </div>
+</div>
+
+<script src="calcul.js"></script>
+</body>
+</html>

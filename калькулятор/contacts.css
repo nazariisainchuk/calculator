@@ -1,0 +1,74 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://static.riel.ua/blogs/original/7LwVMDzzNdI56ehvfoFqvECTFan7ZH9q2hY8t39J.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: #79b2ce;
+}
+
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+#contact-info {
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#map {
+    background-color: rgba(255, 255, 255, 0.45);
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+iframe {
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    height: 450px;
+}
+
+

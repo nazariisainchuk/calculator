@@ -1,0 +1,139 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url('https://static.riel.ua/blogs/original/7LwVMDzzNdI56ehvfoFqvECTFan7ZH9q2hY8t39J.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 1;
+    padding: 1;
+} 
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 150vh; 
+}
+
+h1 {
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 50px;
+    color: #ffffff;
+    -webkit-text-stroke: 2px black;
+    color: rgb(255, 255, 255);
+}
+
+#calculator { 
+    border: 3px solid rgb(50, 50, 57);
+    max-width: 550px;
+    width: 100%;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 35px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 15px;
+    color: #000000;
+    -webkit-text-stroke: 0.5px rgb(255, 255, 255);
+    font-size: 22px;
+    font-weight: bold;
+}
+
+input[type="number"], select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 3px solid #3f3d46;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #2bac40;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.result {
+    margin-top: 30px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #000000;
+}
+
+
+
+
+
+
+
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: #79b2ce;
+}
+
+
+.page {
+    display: none; /* Початково всі сторінки приховані */
+}
+
+.page h2 {
+    margin-top: 20px; /* Відступ перед заголовком сторінки */
+}
+
+.page.active {
+    display: block; /* Показуємо тільки активну сторінку */
+}
+
+
+
